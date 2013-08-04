@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
 
-    <title>  Articles by Jonas Wallin
+    <title>  Simulation of GIG distribution
  | Wallin</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -67,9 +67,14 @@
       
         <div class="row">
           <div class="span6 offset2">
-              <h1>
-    <a  href="/author/jonas-wallin.html" rel="bookmark" title="Permalink to Jonas Wallin's articles">Articles by Jonas Wallin</a>
+            
+ <h1>
+    Simulation of GIG distribution
   </h1>
+File: <a href="/static/uploads/2013/7/gig.zip"> gig.zip </a> 
+  
+
+     </div>
           </div>
         </div>
         <div class="row">
@@ -79,91 +84,56 @@
 
     
           <div 
-           
-			  class="offset2"  
+           class="span6 "  
+			  
           
           id="content" role="main">
-            
-  <section>
+                  
 
-          <h2>Articles</h2>
-    
-         
-        
-          <article>
-<header>
-        <h2>
-        <a href="/articles/2013/06/convultion-of-generalized-hyperbolic/" > 
-       <img src="/static/uploads/2013/6/Convultion of Generalized Hyperbolic.png" height="180" width="180"/>
-			</a> 
-		
-          <a href="/articles/2013/06/convultion-of-generalized-hyperbolic/" rel="bookmark" title="Permalink to Convultion of Generalized Hyperbolic">Convultion of Generalized Hyperbolic</a>
-
-        </h2>
-
-        </header>
-        <div><p>Convolution invariant generalized hyperbolic subclasses</p></div>
-
-      </article>
-
-      <hr/>
-         
-        
-          <article>
-<header>
-        <h2>
-        <a href="/articles/2013/06/leaveoneout/" > 
-       <img src="/static/uploads/2013/6/LeaveOneOut.png" height="180" width="180"/>
-			</a> 
-		
-          <a href="/articles/2013/06/leaveoneout/" rel="bookmark" title="Permalink to LeaveOneOut">LeaveOneOut</a>
-
-        </h2>
-
-        </header>
-        <div><p>Estimation of location parameter for a class of unbounded densities</p></div>
-
-      </article>
-
-      <hr/>
-         
-        
-          <article>
-<header>
-        <h2>
-        <a href="/articles/2013/07/non-gaussian-matern-fields/" > 
-       <img src="/static/uploads/2013/7/non-Gaussian Matern Fields.png" height="180" width="180"/>
-			</a> 
-		
-          <a href="/articles/2013/07/non-gaussian-matern-fields/" rel="bookmark" title="Permalink to non-Gaussian Matern Fields">non-Gaussian Matern Fields</a>
-
-        </h2>
-
-        </header>
-        <div><p>Estimation and prediction of non Gaussian random fields with Matern Covariance</p></div>
-
-      </article>
-
-      <hr/>
-         
-        
-             
-      <div class="pagination">
-    <ul>
-              <li class="prev disabled"><a rel="prev">&larr; Previous</a></li>
-      
-                        <li class="active"><a href="/author/jonas-wallin.html">1</a></li>
-                
-              <li class="next disabled"><a rel="next">&rarr; Next</a></li>
-          </ul>
+  <div>
+    <hr />
+<p>The code is based on the very nice article <a href="http://link.springer.com/article/10.1007/s11222-013-9387-3">Generating generalized inverse Gaussian random variates</a>. It uses a modifed version of <a href="http://www.iro.umontreal.ca/~lecuyer/">Pierre L'Ecuyer</a> RngStream, modifed to use <a href="http://en.wikipedia.org/wiki/OpenMP">openMP</a>, to generate $U[0,1]$ r.v. The code also includes .mex files for matlab usage, and functions to compute the expectation.
+I think the author has R extensions.</p>
+<h4 id="extensions">Extensions:</h4>
+<ol>
+<li>Create cython file to link to Python</li>
+<li>make compilation possible on Windows</li>
+<li>Clean up the code</li>
+<li>Make use of openMP for the expectations.</li>
+</ol>
   </div>
 
-  </section>
+  
+
 
           </div>
 
                       <div class="span3">
-                                        </div>
+                <div class="well">
+
+    <p><abbr class="icon-calendar" title="2013-07-24T00:00:00"> Wed 24 July 2013</abbr></p>
+
+          <p><address class="icon-user"> By <a href="/author/jonas-wallin.html" rel="author">Jonas Wallin</a></address></p>
+    
+    
+    <hr/>
+
+          <p>
+                                                          <a href="/articles/category/codes/index.html" rel="tag tooltip" class="label label-info" data-placement="right" data-original-title="1 article in this category">codes</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <a href="/tag/inverse-gaussian.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">inverse Gaussian</a>
+                      <a href="/tag/c.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">c++</a>
+                      <a href="/tag/generalized-inverse-gaussian.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">generalized inverse Gaussian</a>
+                      <a href="/tag/gamma.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">Gamma</a>
+                      <a href="/tag/random-number-generation.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">random number generation</a>
+                        </p>
+      <hr/>
+    
+    <hr/>
+
+
+
+  </div>
+            </div>
           
         </div>
       </section>
