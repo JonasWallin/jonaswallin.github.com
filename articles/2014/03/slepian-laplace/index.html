@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
 
-    <title>  Robust incomplete Cholesky
+    <title>  Slepian Laplace
  | Wallin</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -69,7 +69,7 @@
           <div class="span6 offset2">
             
  <h1>
-    Robust incomplete Cholesky
+    Slepian Laplace
   </h1>
 File: 
 	   			  		  	 	  	  
@@ -86,7 +86,79 @@ File:
 	    
   			  		  	 	  	  
 	    
-  		  				<a href="/static/uploads/2013/9/RIC.zip"> RIC.zip </a>
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  		  				<a href="/static/uploads/2014/3/Gibbs4SlepianNoiseR.zip"> Gibbs4SlepianNoiseR.zip </a>
+			    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  			  		  	 	  	  
+	    
+  		  				<a href="/static/uploads/2014/3/LMA_slepian_upM.zip"> LMA_slepian_upM.zip </a>
 			    
  
      </div>
@@ -107,13 +179,13 @@ File:
 
   <div>
     <hr />
-<p>A robust preconditioner that I use to simulate multivariate normal random variables when regular ichol breaks down.</p>
-<h4>Extensions:</h4>
-<ol>
-<li>Memory allocation is bad (no leak, but allocation should be smarter)</li>
-<li>Port to c or Fortran, and create an R version.</li>
-<li>If speed is improved to the level of ichol, start creating version RIC2 from Igor E. Kaporins article (see code)</li>
-</ol>
+<p>Programs both in R and matlab for simulating Slepain models with a Laplace moving average.
+That is simulating upcrossings of models of the type:
+$$
+ X(t) = \int f(t-s) d\Lambda(s),
+$$
+where $\Lambda(s)$ is Laplace moving average. The function is used in paper:
+Slepian models for moving averages driven by a non-Gaussian noise.</p>
   </div>
 
   
@@ -124,7 +196,7 @@ File:
                       <div class="span3">
                 <div class="well">
 
-    <p><abbr class="icon-calendar" title="2013-09-05T00:00:00"> Thu 05 September 2013</abbr></p>
+    <p><abbr class="icon-calendar" title="2014-03-25T00:00:00"> Tue 25 March 2014</abbr></p>
 
           <p><address class="icon-user"> By <a href="/author/jonas-wallin.html" rel="author">Jonas Wallin</a></address></p>
     
@@ -133,10 +205,10 @@ File:
 
           <p>
                                                           <a href="/articles/category/codes/index.html" rel="tag tooltip" class="label label-info" data-placement="right" data-original-title="3 articles in this category">codes</a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <a href="/tag/c.html" rel="tooltip" class="label" data-placement="right" data-original-title="2 articles with this tag">C++</a>
-                      <a href="/tag/cholesky.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">Cholesky</a>
-                      <a href="/tag/preconditioner.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">preconditioner</a>
-                      <a href="/tag/iterative-method.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">iterative method</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <a href="/tag/slepian.html" rel="tooltip" class="label" data-placement="right" data-original-title="2 articles with this tag">Slepian</a>
+                      <a href="/tag/laplace-moving-average.html" rel="tooltip" class="label" data-placement="right" data-original-title="2 articles with this tag">Laplace moving average</a>
+                      <a href="/tag/r.html" rel="tooltip" class="label" data-placement="right" data-original-title="2 articles with this tag">R</a>
+                      <a href="/tag/matlab.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">matlab</a>
                         </p>
       <hr/>
     
