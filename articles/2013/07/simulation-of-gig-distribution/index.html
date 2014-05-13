@@ -29,13 +29,13 @@
     <link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'/>
  -->
-    
+
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <!-- Feeds -->
-                                
-        
+
+
   </head>
 
   <body>
@@ -53,10 +53,10 @@
           <div class="navbar-inner">
            <!-- <a class="brand" href="" title="">Wallin + 1</a> -->
             <ul class="nav">
-                              <li ><a href="/">Home</a></li>
-                              <li ><a href="/articles/">articles</a></li>
-                              <li ><a href="/code/">code</a></li>
-                                        </ul>
+<li ><a href="/">Home</a></li>
+<li ><a href="/articles/">articles</a></li>
+<li ><a href="/code/">code</a></li>
+            </ul>
           </div>
         </div>
       </header>
@@ -67,82 +67,80 @@
       
         <div class="row">
           <div class="span6 offset2">
-            
+
  <h1>
     Simulation of GIG distribution
   </h1>
 File: 
-	   			  		  	 	  	  
-	    
-  			  		  	 	  	  
-	    
-  			  		  	 	  	  
-	    
-  			  		  	 	  	  
-	    
-  			  		  	 	  	  
-	    
-  			  		  	 	  	  
-	    
-  			  		  	 	  	  
-	    
-  		  				<a href="/static/uploads/2013/7/gig.zip"> gig.zip </a>
-			    
-  			  	 
-	    
-  			  		  	 	  	  
-	    
-  			  		  	 	  	  
-	    
-  			  		  	 	  	  
-	    
-  			  		  	 	  	  
-	    
-  			  		  	 	  	  
-	    
-  			  		  	 	  	  
-	    
-  			  		  	 	  	  
-	    
-  			  		  	 	  	  
-	    
-  			  		  	 	  	  
-	    
-  			  		  	 	  	  
-	    
-  			  		  	 	  	  
-	    
-  			  		  	 	  	  
-	    
-  			  		  	 	  	  
-	    
-  			  		  	 	  	  
-	    
-  			  		  	 	  	  
-	    
-  		  				<a href="/static/uploads/2013/7/rGIG_0.1.tar.gz"> rGIG_0.1.tar.gz </a>
-			    
  
-     </div>
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+		<a href="/static/uploads/2013/7/gig.zip"> gig.zip </a>
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+		<a href="/static/uploads/2013/7/rGIG_0.1.tar.gz"> rGIG_0.1.tar.gz </a>
+  
+
+  </div>
           </div>
         </div>
         <div class="row">
         
         <div class="span2">
-                                    </div>
+        </div>
 
     
           <div 
-           class="span6 "  
-			  
+ class="span6 "  
+ 
           
           id="content" role="main">
-                  
+  
 
   <div>
     <hr />
-<p><strong><em>Recent change in mac currently creates an error in the mex, updatet soon</em></strong>
-<strong><em> However, the pure matlab code obviously still works but is a bit slower.</em></strong></p>
 <p>The code is based on the very nice article <a href="http://link.springer.com/article/10.1007/s11222-013-9387-3">Generating generalized inverse Gaussian random variates</a>. It uses a modifed version of <a href="http://www.iro.umontreal.ca/~lecuyer/">Pierre L'Ecuyer</a> RngStream, modifed to use <a href="http://en.wikipedia.org/wiki/OpenMP">openMP</a>, to generate $U[0,1]$ r.v. The code also includes .mex files for matlab usage, and functions to compute the expectation.
 I the author has <a href="http://cran.r-project.org/web/packages/GIGrvg/">R packages</a>.</p>
 <h4>Extensions:</h4>
@@ -152,45 +150,73 @@ I the author has <a href="http://cran.r-project.org/web/packages/GIGrvg/">R pack
 <li>Clean up the code</li>
 <li>Make use of openMP for the expectations.</li>
 </ol>
-<h4>updated:</h4>
+<h4>UPDATE:</h4>
 <ul>
 <li>2014-03-25, added R-package ,and added matlab file if mex files dont work.</li>
+<li>2014-05-11, cleaned up some of the makefiles</li>
 </ul>
+<h4>For MAC:</h4>
+<p>To make openmp, and mex compile through makefiles one typically needs to make some adjustment. Most of my <strong>mexopts.sh</strong> modification is taken from <a href="http://www.mathworks.com/matlabcentral/answers/103904-can-i-use-xcode-5-as-my-c-or-c-compiler-in-matlab-8-1-r2013a-or-matlab-8-2-r2013b">mathwork question</a> (where <a href="http://www.cise.ufl.edu/~davis/welcome.html">Tim Davis</a> creator of <a href="http://www.cise.ufl.edu/research/sparse/cholmod/">cholmod</a> responds).</p>
+<ul>
+<li><strong>Link to mex bin in the standard_defs.mk</strong><br />
+  Typically mex is tex program of some sort (no idea what it does). To resolve this set MATLAB_ROOT_BIN in standard_defs.mk My path is:</li>
+</ul>
+<div class="highlight"><pre><span class="n">MATLAB_ROOT_BIN</span> <span class="o">=</span> <span class="o">/</span><span class="n">Applications</span><span class="o">/</span><span class="n">MATLAB_R2013a</span><span class="p">.</span><span class="n">app</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="p">.</span>
+</pre></div>
+
+
+<ul>
+<li><strong>update mexopts.sh</strong><br />
+    in the file ($HOME)/.matlab/VERSION/mexopts.sh
+    set the -sdk, MACOSX_DEPLOYMENT_TARGET to correct version. My options are: </li>
+</ul>
+<div class="highlight"><pre><span class="o">-</span><span class="n">sdk</span> <span class="n">macosx10</span><span class="mf">.9</span>
+<span class="n">MACOSX_DEPLOYMENT_TARGET</span><span class="o">=</span><span class="s">&quot;10.9&quot;</span><span class="p">.</span> 
+</pre></div>
+
+
+<ul>
+<li><strong>update mexopts.sh 2</strong><br />
+To make openmp work install gcc-mp, g++-mp through macport. then change CC and CXX. My options are:</li>
+</ul>
+<div class="highlight"><pre><span class="n">CC</span><span class="o">=</span><span class="err">&#39;</span><span class="n">xcrun</span>  <span class="o">-</span><span class="n">sdk</span> <span class="n">macosx10</span><span class="mf">.9</span>  <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">gcc</span><span class="o">-</span><span class="n">mp</span><span class="o">-</span><span class="mf">4.8</span><span class="err">&#39;</span> 
+<span class="n">CXX</span><span class="o">=</span><span class="err">&#39;</span><span class="n">xcrun</span>  <span class="o">-</span><span class="n">sdk</span> <span class="n">macosx10</span><span class="mf">.9</span>  <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">g</span><span class="o">++-</span><span class="n">mp</span><span class="o">-</span><span class="mf">4.8</span><span class="err">&#39;</span>
+</pre></div>
   </div>
 
-  
+
 
 
           </div>
 
-                      <div class="span3">
-                <div class="well">
+            <div class="span3">
+  <div class="well">
 
     <p><abbr class="icon-calendar" title="2013-07-24T00:00:00"> Wed 24 July 2013</abbr></p>
 
-          <p><address class="icon-user"> By <a href="/author/jonas-wallin.html" rel="author">Jonas Wallin</a></address></p>
-    
-    
+      <p><address class="icon-user"> By <a href="/author/jonas-wallin.html" rel="author">Jonas Wallin</a></address></p>
+
+
     <hr/>
 
-          <p>
-                                                          <a href="/articles/category/codes/index.html" rel="tag tooltip" class="label label-info" data-placement="right" data-original-title="3 articles in this category">codes</a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <a href="/tag/c.html" rel="tooltip" class="label" data-placement="right" data-original-title="2 articles with this tag">C++</a>
-                      <a href="/tag/r.html" rel="tooltip" class="label" data-placement="right" data-original-title="2 articles with this tag">R</a>
-                      <a href="/tag/inverse-gaussian.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">inverse Gaussian</a>
-                      <a href="/tag/gamma.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">Gamma</a>
-                      <a href="/tag/generalized-inverse-gaussian.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">generalized inverse Gaussian</a>
-                      <a href="/tag/random-number-generation.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">random number generation</a>
-                        </p>
+      <p>
+              <a href="/articles/category/codes/index.html" rel="tag tooltip" class="label label-info" data-placement="right" data-original-title="3 articles in this category">codes</a>
+            <a href="/tag/c.html" rel="tooltip" class="label" data-placement="right" data-original-title="2 articles with this tag">C++</a>
+            <a href="/tag/r.html" rel="tooltip" class="label" data-placement="right" data-original-title="2 articles with this tag">R</a>
+            <a href="/tag/generalized-inverse-gaussian.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">generalized inverse Gaussian</a>
+            <a href="/tag/inverse-gaussian.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">inverse Gaussian</a>
+            <a href="/tag/random-number-generation.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">random number generation</a>
+            <a href="/tag/gamma.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">Gamma</a>
+      </p>
       <hr/>
-    
+
     <hr/>
 
 
 
   </div>
             </div>
-          
+
         </div>
       </section>
 
@@ -229,14 +255,14 @@ Box 118, 22100 Lund </li>
           </div>
 <!--
           <div class="span2">
-                          <h5>Other pages</h5>
+              <h5>Other pages</h5>
               <ul class="unstyled">
-                                <li><a href="http://getpelican.com/">Pelican</a></li>
-                                <li><a href="http://python.org/">Python.org</a></li>
-                                <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                                <li><a href="#">You can modify those links in your config file</a></li>
-                            </ul>
-                      </div>
+                  <li><a href="http://getpelican.com/">Pelican</a></li>
+                  <li><a href="http://python.org/">Python.org</a></li>
+                  <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                  <li><a href="#">You can modify those links in your config file</a></li>
+              </ul>
+          </div>
 -->
           <div class="span2 muted">
             <h5>Copyright notice </h5>
@@ -258,12 +284,24 @@ Box 118, 22100 Lund </li>
       </div>
     </footer>
 
-        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-50922471-1']);
+        _gaq.push(['_setDomainName', 'deldycke.com']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
     <script src="/theme/js/jquery.mglass.js"></script>
     <script src="/theme/js/application.js"></script>
-    
+
   </body>
   
 
