@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
 
-    <title>  Simulation of GIG distribution
+    <title>  mixture
  | Jonas Wallin, Ph.D mathematical statistics</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -67,63 +67,9 @@
       
         <div class="row">
           <div class="span6 offset2">
-
- <h1>
-    Simulation of GIG distribution
+  <h1>
+    <a  href="/tag/mixture.html" rel="bookmark" title="Permalink to mixture articles">mixture articles</a>
   </h1>
-File: 
- 
-  
- 
-  
- 
-  
- 
-  
- 
-  
- 
-  
- 
-  
-		<a href="/static/uploads/2013/7/gig.zip" onClick="ga('send','event','download','code','gig.zip')"> gig.zip </a>
-  
- 
-  
- 
-  
- 
-  
- 
-  
- 
-  
- 
-  
- 
-  
- 
-  
- 
-  
- 
-  
- 
-  
- 
-  
- 
-  
- 
-  
- 
-  
- 
-  
-		<a href="/static/uploads/2013/7/rGIG_0.1.tar.gz" onClick="ga('send','event','download','code','rGIG_0.1.tar.gz')"> rGIG_0.1.tar.gz </a>
-  
-
-  </div>
           </div>
         </div>
         <div class="row">
@@ -137,84 +83,13 @@ File:
  
           
           id="content" role="main">
-  
-
-  <div>
-    <hr />
-<p>The code is based on the very nice article <a href="http://link.springer.com/article/10.1007/s11222-013-9387-3">Generating generalized inverse Gaussian random variates</a>. It uses a modifed version of <a href="http://www.iro.umontreal.ca/~lecuyer/">Pierre L'Ecuyer</a> RngStream, modifed to use <a href="http://en.wikipedia.org/wiki/OpenMP">openMP</a>, to generate $U[0,1]$ r.v. The code also includes .mex files for matlab usage, and functions to compute the expectation.
-I the author has <a href="http://cran.r-project.org/web/packages/GIGrvg/">R packages</a>.</p>
-<h4>Extensions:</h4>
-<ol>
-<li>Create cython file to link to Python</li>
-<li>make compilation possible on Windows</li>
-<li>Clean up the code</li>
-<li>Make use of openMP for the expectations.</li>
-</ol>
-<h4>UPDATE:</h4>
-<ul>
-<li>2014-03-25, added R-package ,and added matlab file if mex files dont work.</li>
-<li>2014-05-11, cleaned up some of the makefiles</li>
-</ul>
-<h4>For MAC:</h4>
-<p>To make openmp, and mex compile through makefiles one typically needs to make some adjustment. Most of my <strong>mexopts.sh</strong> modification is taken from <a href="http://www.mathworks.com/matlabcentral/answers/103904-can-i-use-xcode-5-as-my-c-or-c-compiler-in-matlab-8-1-r2013a-or-matlab-8-2-r2013b">mathwork question</a> (where <a href="http://www.cise.ufl.edu/~davis/welcome.html">Tim Davis</a> creator of <a href="http://www.cise.ufl.edu/research/sparse/cholmod/">cholmod</a> responds).</p>
-<ul>
-<li><strong>Link to mex bin in the standard_defs.mk</strong><br />
-  Typically mex is tex program of some sort (no idea what it does). To resolve this set MATLAB_ROOT_BIN in standard_defs.mk My path is:</li>
-</ul>
-<div class="highlight"><pre><span class="n">MATLAB_ROOT_BIN</span> <span class="o">=</span> <span class="o">/</span><span class="n">Applications</span><span class="o">/</span><span class="n">MATLAB_R2013a</span><span class="p">.</span><span class="n">app</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="p">.</span>
-</pre></div>
-
-
-<ul>
-<li><strong>update mexopts.sh</strong><br />
-    in the file ($HOME)/.matlab/VERSION/mexopts.sh
-    set the -sdk, MACOSX_DEPLOYMENT_TARGET to correct version. My options are: </li>
-</ul>
-<div class="highlight"><pre><span class="o">-</span><span class="n">sdk</span> <span class="n">macosx10</span><span class="mf">.9</span>
-<span class="n">MACOSX_DEPLOYMENT_TARGET</span><span class="o">=</span><span class="s">&quot;10.9&quot;</span><span class="p">.</span> 
-</pre></div>
-
-
-<ul>
-<li><strong>update mexopts.sh 2</strong><br />
-To make openmp work install gcc-mp, g++-mp through macport. then change CC and CXX. My options are:</li>
-</ul>
-<div class="highlight"><pre><span class="n">CC</span><span class="o">=</span><span class="err">&#39;</span><span class="n">xcrun</span>  <span class="o">-</span><span class="n">sdk</span> <span class="n">macosx10</span><span class="mf">.9</span>  <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">gcc</span><span class="o">-</span><span class="n">mp</span><span class="o">-</span><span class="mf">4.8</span><span class="err">&#39;</span> 
-<span class="n">CXX</span><span class="o">=</span><span class="err">&#39;</span><span class="n">xcrun</span>  <span class="o">-</span><span class="n">sdk</span> <span class="n">macosx10</span><span class="mf">.9</span>  <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">g</span><span class="o">++-</span><span class="n">mp</span><span class="o">-</span><span class="mf">4.8</span><span class="err">&#39;</span>
-</pre></div>
-  </div>
-
-
-
-
+  <dl class="dl-horizontal">
+      <dt><abbr class="published" title="2015-05-14T00:00:00">Thu 14 May 2015</abbr></dt>
+      <dd><a href="/articles/2015/05/bayesflow-latent-modeling-of-flow-cytometry-cell-populations/">BayesFlow: Latent modeling of flow cytometry cell populations</a></dd>
+  </dl>
           </div>
 
             <div class="span3">
-  <div class="well">
-
-    <p><abbr class="icon-calendar" title="2013-07-24T00:00:00"> Wed 24 July 2013</abbr></p>
-
-      <p><address class="icon-user"> By <a href="/author/jonas-wallin.html" rel="author">Jonas Wallin</a></address></p>
-
-
-    <hr/>
-
-      <p>
-              <a href="/articles/category/codes/index.html" rel="tag tooltip" class="label label-info" data-placement="right" data-original-title="3 articles in this category">codes</a>
-            <a href="/tag/c.html" rel="tooltip" class="label" data-placement="right" data-original-title="2 articles with this tag">C++</a>
-            <a href="/tag/r.html" rel="tooltip" class="label" data-placement="right" data-original-title="2 articles with this tag">R</a>
-            <a href="/tag/generalized-inverse-gaussian.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">generalized inverse Gaussian</a>
-            <a href="/tag/inverse-gaussian.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">inverse Gaussian</a>
-            <a href="/tag/random-number-generation.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">random number generation</a>
-            <a href="/tag/gamma.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">Gamma</a>
-      </p>
-      <hr/>
-
-    <hr/>
-
-
-
-  </div>
             </div>
 
         </div>
@@ -266,7 +141,7 @@ Box 118, 22100 Lund </li>
 -->
           <div class="span2 muted">
             <h5>Copyright notice </h5>
-            <p>© Copyright 2013-2014 Jonas Wallin.</p>
+            <p>© Copyright 2013-2015 Jonas Wallin.</p>
             <p>Unless contrary mention, the licensing terms below applies:<br/>Code and software released under <a href="http://www.fsf.org/licensing/licenses/gpl.html">GNU/GPL licence v2.0</a>;<br/>Other content published under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 license</a>.</p>
           </div>
 

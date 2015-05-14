@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
 
-    <title>  inverse Gaussian
+    <title>  BayesFlow: Latent modeling of flow cytometry cell populations
  | Jonas Wallin, Ph.D mathematical statistics</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -67,9 +67,18 @@
       
         <div class="row">
           <div class="span6 offset2">
+
+
+       <img src="/static/uploads/2015/5/BayesFlow: Latent modeling of flow cytometry cell populations.png" height="450" width="450"/>
+
+<div class = "article-title">
   <h1>
-    <a  href="/tag/inverse-gaussian.html" rel="bookmark" title="Permalink to inverse Gaussian articles">inverse Gaussian articles</a>
+    <a href="http://arxiv.org/abs/1502.04058" onClick="ga('send','event', 'download','art','BayesFlow: Latent modeling of flow cytometry cell populations')" rel="bookmark" title="link to BayesFlow: Latent modeling of flow cytometry cell populations">BayesFlow: Latent modeling of flow cytometry cell populations</a> 
   </h1>
+  
+<h3>Wallin, Johnsson, Fontes</h3>
+	  		<h4>(to be submitted)</h4>
+  </div>
           </div>
         </div>
         <div class="row">
@@ -83,13 +92,52 @@
  
           
           id="content" role="main">
-  <dl class="dl-horizontal">
-      <dt><abbr class="published" title="2013-07-24T00:00:00">Wed 24 July 2013</abbr></dt>
-      <dd><a href="/articles/2013/07/simulation-of-gig-distribution/">Simulation of GIG distribution</a></dd>
-  </dl>
+  
+
+  <div>
+    <hr />
+<p>Here we formulate a Bayesian hierarchical model, that models the variation across indivuals for 
+clow cytometry data. The cell data is follows a Gaussian mixture model, wheras the mean and covariance of each class--representing a certain cell type-- is joint in a latent layer.
+Sampling of the posterior distribution is done through a Gibbs sampler, 
+where the sampling is parallelised across indivuals.
+All (python) code is available at available  <a href="https://github.com/JonasWallin/BayesFlow">Github</a>.</p>
+<h4>Extensions:</h4>
+<ul>
+<li>Lots on the way</li>
+</ul>
+  </div>
+
+
+
+
           </div>
 
             <div class="span3">
+  <div class="well">
+
+    <p><abbr class="icon-calendar" title="2015-05-14T00:00:00"> Thu 14 May 2015</abbr></p>
+
+      <p><address class="icon-user"> By <a href="/author/jonas-wallin.html" rel="author">Jonas Wallin</a></address></p>
+
+
+    <hr/>
+
+      <p>
+              <a href="/articles/category/papers/index.html" rel="tag tooltip" class="label label-info" data-placement="right" data-original-title="6 articles in this category">papers</a>
+            <a href="/tag/article.html" rel="tooltip" class="label" data-placement="right" data-original-title="3 articles with this tag">article</a>
+            <a href="/tag/flow_cytometry.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">flow_cytometry</a>
+            <a href="/tag/gmm.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">GMM</a>
+            <a href="/tag/mixture.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">mixture</a>
+            <a href="/tag/hierarchical.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">Hierarchical</a>
+            <a href="/tag/mcmc.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">MCMC</a>
+      </p>
+      <hr/>
+
+    <hr/>
+
+
+
+  </div>
             </div>
 
         </div>
@@ -141,7 +189,7 @@ Box 118, 22100 Lund </li>
 -->
           <div class="span2 muted">
             <h5>Copyright notice </h5>
-            <p>© Copyright 2013-2013 Jonas Wallin.</p>
+            <p>© Copyright 2013-2015 Jonas Wallin.</p>
             <p>Unless contrary mention, the licensing terms below applies:<br/>Code and software released under <a href="http://www.fsf.org/licensing/licenses/gpl.html">GNU/GPL licence v2.0</a>;<br/>Other content published under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 license</a>.</p>
           </div>
 
