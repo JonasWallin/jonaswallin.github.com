@@ -123,6 +123,7 @@ File:
 		<a href="/static/uploads/2013/7/rGIG_0.1.tar.gz" onClick="ga('send','event','download','code','rGIG_0.1.tar.gz')"> rGIG_0.1.tar.gz </a>
   
 
+<h3>[<Author u'Jonas Wallin'>]</h3>
   </div>
           </div>
         </div>
@@ -161,7 +162,7 @@ I the author has <a href="http://cran.r-project.org/web/packages/GIGrvg/">R pack
 <li><strong>Link to mex bin in the standard_defs.mk</strong><br />
   Typically mex is tex program of some sort (no idea what it does). To resolve this set MATLAB_ROOT_BIN in standard_defs.mk My path is:</li>
 </ul>
-<div class="highlight"><pre><span class="n">MATLAB_ROOT_BIN</span> <span class="o">=</span> <span class="o">/</span><span class="n">Applications</span><span class="o">/</span><span class="n">MATLAB_R2013a</span><span class="p">.</span><span class="n">app</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="p">.</span>
+<div class="highlight"><pre><span></span>MATLAB_ROOT_BIN = /Applications/MATLAB_R2013a.app/bin/.
 </pre></div>
 
 
@@ -170,8 +171,8 @@ I the author has <a href="http://cran.r-project.org/web/packages/GIGrvg/">R pack
     in the file ($HOME)/.matlab/VERSION/mexopts.sh
     set the -sdk, MACOSX_DEPLOYMENT_TARGET to correct version. My options are: </li>
 </ul>
-<div class="highlight"><pre><span class="o">-</span><span class="n">sdk</span> <span class="n">macosx10</span><span class="mf">.9</span>
-<span class="n">MACOSX_DEPLOYMENT_TARGET</span><span class="o">=</span><span class="s">&quot;10.9&quot;</span><span class="p">.</span> 
+<div class="highlight"><pre><span></span>-sdk macosx10.9
+MACOSX_DEPLOYMENT_TARGET=&quot;10.9&quot;. 
 </pre></div>
 
 
@@ -179,8 +180,8 @@ I the author has <a href="http://cran.r-project.org/web/packages/GIGrvg/">R pack
 <li><strong>update mexopts.sh 2</strong><br />
 To make openmp work install gcc-mp, g++-mp through macport. then change CC and CXX. My options are:</li>
 </ul>
-<div class="highlight"><pre><span class="n">CC</span><span class="o">=</span><span class="err">&#39;</span><span class="n">xcrun</span>  <span class="o">-</span><span class="n">sdk</span> <span class="n">macosx10</span><span class="mf">.9</span>  <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">gcc</span><span class="o">-</span><span class="n">mp</span><span class="o">-</span><span class="mf">4.8</span><span class="err">&#39;</span> 
-<span class="n">CXX</span><span class="o">=</span><span class="err">&#39;</span><span class="n">xcrun</span>  <span class="o">-</span><span class="n">sdk</span> <span class="n">macosx10</span><span class="mf">.9</span>  <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">g</span><span class="o">++-</span><span class="n">mp</span><span class="o">-</span><span class="mf">4.8</span><span class="err">&#39;</span>
+<div class="highlight"><pre><span></span>CC=&#39;xcrun  -sdk macosx10.9  /opt/local/bin/gcc-mp-4.8&#39; 
+CXX=&#39;xcrun  -sdk macosx10.9  /opt/local/bin/g++-mp-4.8&#39;
 </pre></div>
   </div>
 
@@ -192,7 +193,7 @@ To make openmp work install gcc-mp, g++-mp through macport. then change CC and C
             <div class="span3">
   <div class="well">
 
-    <p><abbr class="icon-calendar" title="2013-07-24T00:00:00"> Wed 24 July 2013</abbr></p>
+    <p><abbr class="icon-calendar" title="2013-07-24T00:00:00+02:00"> Wed 24 July 2013</abbr></p>
 
       <p><address class="icon-user"> By <a href="/author/jonas-wallin.html" rel="author">Jonas Wallin</a></address></p>
 
@@ -253,7 +254,7 @@ Matematiska vetenskaper, Chalmers tekniska högskola
 
             </ul>
           </div>
-<!--
+
           <div class="span2">
               <h5>Other pages</h5>
               <ul class="unstyled">
@@ -263,9 +264,10 @@ Matematiska vetenskaper, Chalmers tekniska högskola
                   <li><a href="#">You can modify those links in your config file</a></li>
               </ul>
           </div>
--->
+
           <div class="span2 muted">
             <h5>Copyright notice </h5>
+           
             <p>© Copyright 2013-2015 Jonas Wallin.</p>
             <p>Unless contrary mention, the licensing terms below applies:<br/>Code and software released under <a href="http://www.fsf.org/licensing/licenses/gpl.html">GNU/GPL licence v2.0</a>;<br/>Other content published under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 license</a>.</p>
           </div>

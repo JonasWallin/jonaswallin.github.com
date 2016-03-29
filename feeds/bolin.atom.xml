@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Jonas Wallin, mathematical statistics</title><link href="/" rel="alternate"></link><link href="/feeds/bolin.atom.xml" rel="self"></link><id>/</id><updated>2014-03-25T00:00:00+01:00</updated><entry><title>LGFM model</title><link href="/articles/2014/03/lgfm-model/" rel="alternate"></link><updated>2014-03-25T00:00:00+01:00</updated><author><name>Bolin</name></author><id>tag:,2014-03-25:articles/2014/03/lgfm-model/</id><summary type="html">&lt;p&gt;We introduce the the latent Gaussian random field mixture (LGFM) models.
+The model class combines the discrete Markov random fields (MRFs) with latent Gaussian random field models and can be used for simultaneous segmentation, noise reduction, and interpolation of spatial data. The latent model is defined as a mixture of several, possibly multivariate, Gaussian random fields, and which of the fields that is observed at each location is modeled using a discrete random field, such as a discrete MRF.&lt;/p&gt;
+&lt;p&gt;As an application we study the noise reduction ability on a magnetic resonance imaging data. In a simulation study (not in the preprint) we also study the ability to detect discontinouties in mean functions of latent Gaussian process. The model preforms much better then the regular latent Gaussian model in recustring the latent fields in both the simulation study and in the noise reduction of the real data. &lt;/p&gt;</summary><category term="MRF model"></category><category term="latent Gaussian process"></category><category term="estimation"></category><category term="kriging"></category><category term="mri imaging"></category></entry><entry><title>non-Gaussian Matern Fields</title><link href="/articles/2013/07/non-gaussian-matern-fields/" rel="alternate"></link><updated>2013-07-24T00:00:00+02:00</updated><author><name>Bolin</name></author><id>tag:,2013-07-24:articles/2013/07/non-gaussian-matern-fields/</id><summary type="html">&lt;p&gt;In this article, we exaim how to preform estimation and predicition on a certain type of continous non Gaussian random fields models.
+The article is an application extension of the article &lt;a href="http://arxiv.org/abs/1206.0622"&gt;Bolin 2013&lt;/a&gt; (now published in SJS).
+We extend the models in the article, by adding measurement noise and covariates; the estimation
+is done through a MCEM algorithm. 
+We also test how the models preform on a real data set with precipitation over the US; comparing the model to the
+standard Gaussian and transformed Gaussian models. The conlusion for this data is that the models works well
+but we need to incorporate covariates into the variance, since the mean and variance of the data is clearly linked.&lt;/p&gt;
+&lt;p&gt;R code is available at: &lt;a href="https://bitbucket.org/davidbolin/lang"&gt;Lang&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Extensions:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The next planned extension is to change from MCEM to other stochastic estimation methods; There are two main reasons
+    for this, first hopefully we can improve the speed of the algorithm, secondly we hope it allowes for more advanced models.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Expanding the model for regular grids; where a more rich noise class can be studied.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="article"></category><category term="generalized Hyperbolic disribution"></category><category term="MCEM"></category><category term="SPDEs"></category><category term="spatial"></category><category term="precipitation"></category></entry></feed>

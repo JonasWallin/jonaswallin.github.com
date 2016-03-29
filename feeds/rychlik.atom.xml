@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Jonas Wallin, mathematical statistics</title><link href="/" rel="alternate"></link><link href="/feeds/rychlik.atom.xml" rel="self"></link><id>/</id><updated>2014-03-25T00:00:00+01:00</updated><entry><title>Slepian models for LMA</title><link href="/articles/2014/03/slepian-models-for-lma/" rel="alternate"></link><updated>2014-03-25T00:00:00+01:00</updated><author><name>Podgórski</name></author><id>tag:,2014-03-25:articles/2014/03/slepian-models-for-lma/</id><summary type="html">&lt;p&gt;The article describes the concept of Slepian noise. A slepian models describes the behavior of a stochastic process (in time) crossing a certain level, $u$. The main contribution of the articles are method to simulate slepian for Laplace moving average models. That is models of the type 
+$$
+ X(t) = \int f(t-s) d\Lambda(s),
+$$
+where $\Lambda(s)$ is Laplace moving average. &lt;/p&gt;
+&lt;p&gt;We compare the Slepian Laplace model to the regular Gaussian version on data that micis cars driving on roads. The figure displays the upcrossing of the accelaration of a person given that drives on a Laplace moving average road. 
+R ana matlab code for the Laplace crossing&lt;/p&gt;</summary><category term="Laplace moving average"></category><category term="Slepian"></category><category term="stochastic process"></category><category term="upcrossing"></category></entry></feed>

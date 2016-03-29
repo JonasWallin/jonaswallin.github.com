@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonas Wallin, mathematical statistics</title><link>/</link><description></description><atom:link href="/feeds/jonas-wallin.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 14 May 2015 00:00:00 +0200</lastBuildDate><item><title>Precision based MALA and MHRW</title><link>/articles/2015/05/precision-based-mala-and-mhrw/</link><description>&lt;hr /&gt;
+&lt;p&gt;This code is used to online estimate the Cholesky factor of a sparse precision matrix,
+used to efficently sample densities using MALA or MHRW.&lt;/p&gt;
+&lt;p&gt;Most of the code is written matlab. The online updating algorithms is written in C++ with openmp.&lt;/p&gt;
+&lt;p&gt;Also to examples where the aglorithms are used is included. &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jonas Wallin</dc:creator><pubDate>Thu, 14 May 2015 00:00:00 +0200</pubDate><guid>tag:,2015-05-14:articles/2015/05/precision-based-mala-and-mhrw/</guid><category>MCMC</category><category>AMCMC</category><category>MALA</category><category>MHRW</category><category>C++</category><category>matlab</category><category>Cholesky factor estimation</category></item><item><title>Slepian Laplace</title><link>/articles/2014/03/slepian-laplace/</link><description>&lt;hr /&gt;
+&lt;p&gt;Programs both in R and matlab for simulating Slepain models with a Laplace moving average.
+That is simulating upcrossings of models of the type:
+$$
+ X(t) = \int f(t-s) d\Lambda(s),
+$$
+where $\Lambda(s)$ is Laplace moving average. The function is used in paper:
+Slepian models for moving averages driven by a non-Gaussian noise.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jonas Wallin</dc:creator><pubDate>Tue, 25 Mar 2014 00:00:00 +0100</pubDate><guid>tag:,2014-03-25:articles/2014/03/slepian-laplace/</guid><category>matlab</category><category>R</category><category>Slepian</category><category>Laplace moving average</category></item><item><title>Robust incomplete Cholesky</title><link>/articles/2013/09/robust-incomplete-cholesky/</link><description>&lt;hr /&gt;
+&lt;p&gt;A robust preconditioner that I use to simulate multivariate normal random variables when regular ichol breaks down.&lt;/p&gt;
+&lt;h4&gt;Extensions:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Memory allocation is bad (no leak, but allocation should be smarter)&lt;/li&gt;
+&lt;li&gt;Port to c or Fortran, and create an R version.&lt;/li&gt;
+&lt;li&gt;If speed is improved to the level of ichol, start creating version RIC2 from Igor E. Kaporins article (see code)&lt;/li&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jonas Wallin</dc:creator><pubDate>Thu, 05 Sep 2013 00:00:00 +0200</pubDate><guid>tag:,2013-09-05:articles/2013/09/robust-incomplete-cholesky/</guid><category>C++</category><category>iterative method</category><category>preconditioner</category><category>Cholesky</category></item><item><title>Simulation of GIG distribution</title><link>/articles/2013/07/simulation-of-gig-distribution/</link><description>&lt;hr /&gt;
+&lt;p&gt;The code is based on the very nice article &lt;a href="http://link.springer.com/article/10.1007/s11222-013-9387-3"&gt;Generating generalized inverse Gaussian random variates&lt;/a&gt;. It uses a modifed version of &lt;a href="http://www.iro.umontreal.ca/~lecuyer/"&gt;Pierre L'Ecuyer&lt;/a&gt; RngStream, modifed to use &lt;a href="http://en.wikipedia.org/wiki/OpenMP"&gt;openMP&lt;/a&gt;, to generate $U[0,1]$ r.v. The code also includes .mex files for matlab usage, and functions to compute the expectation.
+I the author has &lt;a href="http://cran.r-project.org/web/packages/GIGrvg/"&gt;R packages&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;Extensions:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Create cython file to link to Python&lt;/li&gt;
+&lt;li&gt;make compilation possible on Windows&lt;/li&gt;
+&lt;li&gt;Clean up the code&lt;/li&gt;
+&lt;li&gt;Make use of openMP for the expectations.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;UPDATE:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;2014-03-25, added R-package ,and added matlab file if mex files dont work.&lt;/li&gt;
+&lt;li&gt;2014-05-11, cleaned up some of the makefiles&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;For MAC:&lt;/h4&gt;
+&lt;p&gt;To make openmp, and mex compile through makefiles one typically needs to make some adjustment. Most of my &lt;strong&gt;mexopts.sh&lt;/strong&gt; modification is taken from &lt;a href="http://www.mathworks.com/matlabcentral/answers/103904-can-i-use-xcode-5-as-my-c-or-c-compiler-in-matlab-8-1-r2013a-or-matlab-8-2-r2013b"&gt;mathwork question&lt;/a&gt; (where &lt;a href="http://www.cise.ufl.edu/~davis/welcome.html"&gt;Tim Davis&lt;/a&gt; creator of &lt;a href="http://www.cise.ufl.edu/research/sparse/cholmod/"&gt;cholmod&lt;/a&gt; responds).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Link to mex bin in the standard_defs.mk&lt;/strong&gt;&lt;br /&gt;
+  Typically mex is tex program of some sort (no idea what it does). To resolve this set MATLAB_ROOT_BIN in standard_defs.mk My path is:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;MATLAB_ROOT_BIN = /Applications/MATLAB_R2013a.app/bin/.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;update mexopts.sh&lt;/strong&gt;&lt;br /&gt;
+    in the file ($HOME)/.matlab/VERSION/mexopts.sh
+    set the -sdk, MACOSX_DEPLOYMENT_TARGET to correct version. My options are: &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-sdk macosx10.9
+MACOSX_DEPLOYMENT_TARGET=&amp;quot;10.9&amp;quot;. 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;update mexopts.sh 2&lt;/strong&gt;&lt;br /&gt;
+To make openmp work install gcc-mp, g++-mp through macport. then change CC and CXX. My options are:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;CC=&amp;#39;xcrun  -sdk macosx10.9  /opt/local/bin/gcc-mp-4.8&amp;#39; 
+CXX=&amp;#39;xcrun  -sdk macosx10.9  /opt/local/bin/g++-mp-4.8&amp;#39;
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jonas Wallin</dc:creator><pubDate>Wed, 24 Jul 2013 00:00:00 +0200</pubDate><guid>tag:,2013-07-24:articles/2013/07/simulation-of-gig-distribution/</guid><category>Gamma</category><category>inverse Gaussian</category><category>random number generation</category><category>generalized inverse Gaussian</category><category>C++</category><category>R</category></item></channel></rss>
