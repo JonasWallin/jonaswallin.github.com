@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonas Wallin, mathematical statistics</title><link>/</link><description></description><atom:link href="/feeds/wallin.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 24 Jul 2013 00:00:00 +0200</lastBuildDate><item><title>non-Gaussian Matern Fields</title><link>/articles/2013/07/non-gaussian-matern-fields/</link><description>&lt;p&gt;In this article, we exaim how to preform estimation and predicition on a certain type of continous non Gaussian random fields models.
+<rss version="2.0"><channel><title>Jonas Wallin, mathematical statistics</title><link>/</link><description></description><lastBuildDate>Wed, 24 Jul 2013 00:00:00 +0200</lastBuildDate><item><title>non-Gaussian Matern Fields</title><link>/articles/2013/07/non-gaussian-matern-fields/</link><description>&lt;p&gt;In this article, we exaim how to preform estimation and predicition on a certain type of continous non Gaussian random fields models.
 The article is an application extension of the article &lt;a href="http://arxiv.org/abs/1206.0622"&gt;Bolin 2013&lt;/a&gt; (now published in SJS).
 We extend the models in the article, by adding measurement noise and covariates; the estimation
 is done through a MCEM algorithm. 
@@ -16,7 +16,7 @@ but we need to incorporate covariates into the variance, since the mean and vari
 &lt;li&gt;
 &lt;p&gt;Expanding the model for regular grids; where a more rich noise class can be studied.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wallin</dc:creator><pubDate>Wed, 24 Jul 2013 00:00:00 +0200</pubDate><guid>tag:,2013-07-24:articles/2013/07/non-gaussian-matern-fields/</guid><category>article</category><category>generalized Hyperbolic disribution</category><category>MCEM</category><category>SPDEs</category><category>spatial</category><category>precipitation</category></item><item><title>LeaveOneOut</title><link>/articles/2013/06/leaveoneout/</link><description>&lt;p&gt;In this article, we study an estimator of the location parameters ($\delta$) when the
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wallin</dc:creator><pubDate>Wed, 24 Jul 2013 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:,2013-07-24:articles/2013/07/non-gaussian-matern-fields/</guid><category>article</category><category>generalized Hyperbolic disribution</category><category>MCEM</category><category>SPDEs</category><category>spatial</category><category>precipitation</category></item><item><title>LeaveOneOut</title><link>/articles/2013/06/leaveoneout/</link><description>&lt;p&gt;In this article, we study an estimator of the location parameters ($\delta$) when the
 density grows as $cx^{-1}$ when $x \rightarrow 0$. The idea is simply to remove the density ,$f(x_i-\delta)$, coming from observation $i=\argmin_j |x_j-\delta|$ from the log likelihood to get the LeaveOneOut&lt;/p&gt;
 &lt;p&gt;$$
     L(\delta) = \sum_{j \neq i} \log(f(x_i-\delta)).
@@ -30,4 +30,4 @@ the method is lacking, or due to the proof is lacking?&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;We study this class of densities manly beacuse that the &lt;a href="https://en.wikipedia.org/wiki/Variance-gamma_distribution"&gt;Generalized Laplace distribution&lt;/a&gt; (Variance Gamma) is contained in the class. It remains to show that consisteny for the LeaveOneOut likelihood for all the parameters of the distribution.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wallin</dc:creator><pubDate>Fri, 14 Jun 2013 00:00:00 +0200</pubDate><guid>tag:,2013-06-14:articles/2013/06/leaveoneout/</guid><category>consistent estimator</category><category>unbounded density</category><category>article</category><category>Laplace distribution</category></item></channel></rss>
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Wallin</dc:creator><pubDate>Fri, 14 Jun 2013 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:,2013-06-14:articles/2013/06/leaveoneout/</guid><category>consistent estimator</category><category>unbounded density</category><category>article</category><category>Laplace distribution</category></item></channel></rss>
