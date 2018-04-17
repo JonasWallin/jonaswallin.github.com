@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
 
-    <title>  Linear Mixed-Effects Models for Non-Gaussian Repeated Measurement Dataprocesses
+    <title>  Multivariate Type-G Matérn fields
  | Jonas Wallin, mathematical statistics</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -69,14 +69,14 @@
           <div class="span6 offset2">
 
 
-       <img src="/static/uploads/2018/4/Linear Mixed-Effects Models for Non-Gaussian Repeated Measurement Dataprocesses.png" height="450" width="450"/>
+       <img src="/static/uploads/2018/4/Multivariate Type-G Matérn fields.png" height="450" width="450"/>
 
 <div class = "article-title">
   <h1>
-    <a href="https://arxiv.org/abs/1804.02592" onClick="ga('send','event', 'download','art','Linear Mixed-Effects Models for Non-Gaussian Repeated Measurement Dataprocesses')" rel="bookmark" title="link to Linear Mixed-Effects Models for Non-Gaussian Repeated Measurement Dataprocesses">Linear Mixed-Effects Models for Non-Gaussian Repeated Measurement Dataprocesses</a> 
+    <a href="https://arxiv.org/abs/1606.08298" onClick="ga('send','event', 'download','art','Multivariate Type-G Matérn fields')" rel="bookmark" title="link to Multivariate Type-G Matérn fields">Multivariate Type-G Matérn fields</a> 
   </h1>
   
-<h3>Asar, Bolin, Diggle and Wallin</h3>
+<h3>Bolin, Wallin</h3>
 	  		<h4>(submitted )</h4>
   </div>
           </div>
@@ -95,7 +95,8 @@
   
 
   <div>
-    <p>We consider the analysis of continuous repeated measurement outcomes that are collected through time, also known as longitudinal data. A standard framework for analysing data of this kind is a linear Gaussian mixed-effects model within which the outcome variable can be decomposed into fixed-effects, time-invariant and time-varying random-effects, and measurement noise. We develop methodology that, for the first time, allows any combination of these stochastic components to be non-Gaussian, using multivariate Normal variance-mean mixtures. We estimate parameters by max- imum likelihood, implemented with a novel, computationally efficient stochastic gradient algorithm. We obtain standard error estimates by inverting the observed Fisher-information matrix, and obtain the predictive distributions for the random-effects in both filtering (conditioning on past and current data) and smoothing (conditioning on all data) contexts. To implement these procedures, we intro- duce an R package, ngme. We re-analyse two data-sets, from cystic fibrosis and nephrology research, that were previously analysed using Gaussian linear mixed effects models.</p>
+    <p>A new class of non-Gaussian multivariate random fields is formulated using systems of stochastic partial differential equations with additive type-G noise. We consider four increasingly flexible constructions of the noise, based on normal-variance mixture distributions which include several common distributions as special cases. The simpler constructions are similar to existing copula models, which we show result in non-ergodic random fields with asymptotically Gaussian kriging predictors. In contrast to these, and to most existing approaches, the more flexible constructions can model non-Gaussian spatial data without replicates. 
+A model formulation that gives multivariate fields with marginal Mat\'ern covariance functions for each dimension is derived, as well as a parametrization separating non-Gaussian dependence from cross-covariances. The fields are included in a geostatistical model with covariates and measurement noise, for which computationally efficient methods for likelihood-based parameter estimation and probabilistic prediction are derived. As an illustration, a data set consisting of temperature and pressure measurements is analysed, and we show that kriging predictions can be improved for the data by using type-G models instead of Gaussian models.</p>
   </div>
 
 
@@ -116,10 +117,9 @@
       <p>
               <a href="/articles/category/papers/index.html" rel="tag tooltip" class="label label-info" data-placement="right" data-original-title="11 articles in this category">papers</a>
             <a href="/tag/article.html" rel="tooltip" class="label" data-placement="right" data-original-title="8 articles with this tag">article</a>
-            <a href="/tag/mixed-effect.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">Mixed effect</a>
-            <a href="/tag/levy-processes.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">Levy processes</a>
-            <a href="/tag/non-gaussian.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">Non Gaussian</a>
-            <a href="/tag/stochastic-gradient-estimation.html" rel="tooltip" class="label" data-placement="right" data-original-title="1 article with this tag">stochastic gradient estimation</a>
+            <a href="/tag/mcmc.html" rel="tooltip" class="label" data-placement="right" data-original-title="5 articles with this tag">MCMC</a>
+            <a href="/tag/amcmc.html" rel="tooltip" class="label" data-placement="right" data-original-title="4 articles with this tag">AMCMC</a>
+            <a href="/tag/crank-nicolson-langevin.html" rel="tooltip" class="label" data-placement="right" data-original-title="2 articles with this tag">Crank–Nicolson Langevin</a>
       </p>
       <hr/>
 
