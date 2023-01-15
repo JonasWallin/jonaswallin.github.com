@@ -11,6 +11,7 @@ website:
         
       - text: Online talks
         href: talks/index.qmd
+  google-analytics: "UA-50922471-1"
   page-footer:
     left:
         - text:  "Copyright 2023, Jonas Wallin"
