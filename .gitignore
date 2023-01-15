@@ -8,6 +8,7 @@
 .RData
 .Ruserdata
 
-/.quarto/
 
+### quarto
+/.quarto/
 /_site/

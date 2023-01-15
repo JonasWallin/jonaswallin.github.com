@@ -19,4 +19,3 @@ about:
 ---
 
 Associate Professor in Statistics at the [Department of Statistics](https://stat.lu.se) at [Lund University](https://lu.se), Sweden.
-

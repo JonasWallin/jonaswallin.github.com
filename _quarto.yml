@@ -9,7 +9,7 @@ website:
       - text: Publications
         href: publications/index.qmd
         
-      - text: Talks
+      - text: online Talks
         href: talks/index.qmd
   page-footer:
     left:
