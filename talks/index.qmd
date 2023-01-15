@@ -1,5 +1,5 @@
 ---
-title: "online Talks"
+title: "Online talks"
 subtitle: Presentation I given that is available online.
 listing:
   contents: .
