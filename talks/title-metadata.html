@@ -1,0 +1,122 @@
+$if(by-affiliation/first)$
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">$labels.authors$</div>
+  <div class="quarto-title-meta-heading">$labels.affiliations$</div>
+
+  $for(by-author)$
+  <div class="quarto-title-meta-contents">
+    $if(by-author.url)$<a href="$by-author.url$">$endif$$by-author.name.literal$$if(by-author.url)$</a>$endif$
+  </div>
+  $if(by-author.affiliations)$
+  <div class="quarto-title-meta-contents">
+    $for(by-author.affiliations)$
+    <p class="affiliation">
+      $if(it.url)$
+      <a href="$it.url$">
+        $endif$
+        $it.name$
+        $if(it.url)$
+      </a>
+      $endif$
+    </p>
+    $endfor$
+  </div>
+  $endif$
+  $endfor$
+</div>
+$endif$
+
+<div class="quarto-title-meta">
+
+  $if(by-affiliation)$
+  $elseif(by-author)$
+  <div>
+    <div class="quarto-title-meta-heading">$labels.authors$</div>
+    <div class="quarto-title-meta-contents">
+      $for(by-author)$
+      <p>$by-author.name.literal$
+      </p>
+      $endfor$
+    </div>
+  </div>
+  $endif$
+
+  $if(date)$
+  <div>
+    <div class="quarto-title-meta-heading">$labels.published$</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">$date$</p>
+    </div>
+  </div>
+  $endif$
+
+  $if(citation)$
+  <div>
+    <div class="quarto-title-meta-heading">Publication</div>
+    <div class="quarto-title-meta-contents">
+      <p>
+        $citation.event-title$$if(citation.event-place)$, $citation.event-place$$endif$
+      </p>
+    </div>
+  </div>
+  <div>
+    <div class="quarto-title-meta-heading">Links</div>
+    <div class="quarto-title-meta-contents">
+      <p class="quarto-title-meta-buttons">
+        $if(doi)$
+          <a href="https://doi.org/$doi$" class="btn btn-success btn-sm">
+            <i class="fa-solid fa-link"></i>&nbsp;DOI
+          </a>
+        $endif$
+        $if(slides)$
+          <a href="$slides$" class="btn btn-warning btn-sm">
+            <i class="fa-solid fa-file-pdf"></i>&nbsp;Slides
+          </a>
+        $endif$
+        $if(paper)$
+          <a href="$paper$" class="btn btn-warning btn-sm">
+            <i class="fa-solid fa-file-pdf"></i>&nbsp;Paper
+          </a>
+        $endif$
+        $if(arxiv)$
+          <a href="https://arxiv.org/abs/$arxiv$" class="btn btn-danger btn-sm">
+            <i class="ai ai-arxiv"></i>&nbsp;arXiv
+          </a>
+        $endif$
+        $if(github)$
+          <a href="http://github.com/$github$" class="btn btn-dark btn-sm">
+            <i class="fa fa-github"></i>&nbsp;Code
+          </a>
+        $endif$
+        $if(bitbucket)$
+          <a href="http://bitbucket.org/$bitbucket$" class="btn btn-dark btn-sm">
+            <i class="fa fa-bitbucket"></i>&nbsp;Code
+          </a>
+        $endif$
+        $if(cran)$
+          <a href="https://CRAN.R-project.org/package=$cran$" class="btn btn-info btn-sm">
+            <i class="fab fa-r-project"></i>&nbsp;CRAN
+          </a>
+        $endif$
+        $if(pypi)$
+          <a href="https://pypi.org/project/$pypi$" class="btn btn-info btn-sm"><i class="fa-brands fa-python"></i>&nbsp;pypi</a>
+        $endif$
+      </p>
+    </div>
+
+  </div>
+  $endif$
+</div>
+
+$if(abstract)$
+<div>
+  <div class="abstract">
+    <div class="abstract-title">$labels.abstract$</div>
+    $abstract$
+  </div>
+</div>
+$endif$
+
+
+
+<p>&nbsp;</p>

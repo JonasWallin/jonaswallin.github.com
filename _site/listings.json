@@ -1,0 +1,13 @@
+[
+  {
+    "listing": "/publications/index.html",
+    "items": []
+  },
+  {
+    "listing": "/talks/index.html",
+    "items": [
+      "/talks/BottenAda/index.html",
+      "/talks/Nowcasting_Covid/index.html"
+    ]
+  }
+]

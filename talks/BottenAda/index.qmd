@@ -1,0 +1,23 @@
+---
+title: Predicting the Swedish Election Using a Bayesian State Space Model (Botten Ada)
+author: 
+  - Jonas Wallin
+  - Måns Magnusson
+  - Jens Finnäs
+
+description: 
+  A talk about the undelying Bayesian model that powered “Botten Ada”
+abstract: 
+  In the Swedish election 2014 “Botten Ada”, a website using Bayesian modelling and probabilistic machine learning made predictions on the election outcome. In the upcoming Swedish election in the fall, “Botten Ada” and it’s founders, Måns Magnusson, Assistant Professor in statistics at Uppsala University and J++ a data journalism team based in Stockholm, will make a comeback with a new updated and refined model together with Jonas Wallin, Lund University. What degree of accuracy can be reached? And what place can prediction models such as these have in political science, and in academia at large?
+date: 2022-06-08
+image: BottenAda.jpeg
+citation:
+  type: speech
+  issued: 2022-06-08
+  event-title: Research seminar
+  event-place: Institutet för framtidsstudier, Stockholm
+  url: https://www.iffs.se/
+---
+
+<iframe width="860" height="420"
+src=" https://www.youtube.com/embed/Dtk5ghFmhz8 "> </iframe>

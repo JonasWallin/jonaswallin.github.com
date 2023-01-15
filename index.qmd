@@ -1,0 +1,22 @@
+---
+title: "Jonas Wallin"
+about: 
+  template: jolla
+  image: images/jonas-wallin.jpg
+  image-shape: round
+  links:
+    - icon: github
+      text: github
+      href: https://github.com/JonasWallin
+    - text: <i class="ai ai-google-scholar"></i> Google scholar
+      href: https://scholar.google.com/citations?user=ls18L60AAAAJ
+    - icon: envelope
+      text: mail
+      href: mailto:jonas.wallin81@gmail.com
+    - icon: resume
+      text: cv.pdf
+      href: https://github.com/JonasWallin/cv/raw/main/CV.pdf  
+---
+
+Associate Professor in Statistics at the [Department of Statistics](https://stat.lu.se) at [Lund University](https://lu.se), Sweden.
+

@@ -1,0 +1,16 @@
+{
+  "hash": "8b0525f172afada9ed1f21ae8f160a5f",
+  "result": {
+    "markdown": "---\ntitle: \"Jonas Wallin\"\nabout: \n  template: jolla\n  image: images/jonas-wallin.jpg\n  image-shape: round\n  links:\n    - icon: github\n      text: github\n      href: https://github.com/JonasWallin\n    - text: <i class=\"ai ai-google-scholar\"></i> Google scholar\n      href: https://scholar.google.com/citations?user=ls18L60AAAAJ\n    - icon: envelope\n      text: mail\n      href: mailto:jonas.wallin81@gmail.com\n---\n\n\nAssociate Professor in Statistics at the [Department of Statistics](https://stat.lu.se) at [Lund University](https://lu.se), Sweden.\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,38 @@
+---
+title: Publications
+subtitle: My publication list and some selected preprint
+sidebar: false
+page-layout: full
+title-block-banner: false
+---
+
+### Selected preprints
+
+```{r}
+#| echo: false
+#| output: asis
+library(RefManageR)
+BibOptions(sorting = "none",style="html",max.names=10,no.print.fields=c("url","pages","number","volume"))
+mybib <- RefManageR::ReadBib("../bib/preprint.bib", check = FALSE) 
+print(sort(mybib,sorting="ynt",decreasing=T))
+```
+
+### Articles
+
+```{r, echo=FALSE}
+#| echo: false
+#| output: asis
+library(RefManageR)
+mybib <- RefManageR::ReadBib("../bib/bibliography.bib", check = FALSE) 
+print(sort(mybib[bibtype= "article"],sorting="ynt",decreasing=T))
+```
+
+### Proccedings
+
+```{r, echo=FALSE}
+#| echo: false
+#| output: asis
+library(RefManageR)
+mybib <- RefManageR::ReadBib("../bib/bibliography.bib", check = FALSE) 
+print(sort(mybib[bibtype= "INPROCEEDINGS"],sorting="ynt",decreasing=T))
+```

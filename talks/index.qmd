@@ -1,0 +1,9 @@
+---
+title: "Talks"
+subtitle: Presentation I given that is available online.
+listing:
+  contents: .
+  type: grid
+  sort: "date desc"
+page-layout: full
+---

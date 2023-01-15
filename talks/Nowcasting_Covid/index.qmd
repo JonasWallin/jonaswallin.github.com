@@ -1,0 +1,21 @@
+---
+title: Nowcasting Covid-19 statistics reported with delay. A case-study of Sweden and UK
+author:
+  - Jonas Wallin
+  - Adam Altmejd
+  - Joacim Rocklöv
+description:  A talk about a Nowcasting model we built for Covid-19 deaths.
+abstract:  Monitoring the progress of the Coronavirus is crucial for timely implementation of intervention. The availability of unbiased timely statistics of trends in disease events are a key to effective responses. But due to reporting delays, the most recently reported numbers are frequently underestimating the total number of infections, hospitalizations and deaths creating an illusion of a downward trend. Here we describe a statistical methodology for predicting true daily quantities and their uncertainty, estimated using historical reporting delays. The methodology takes into account the observed distribution pattern of the lag. It is derived from the “removal method”, a well-established estimation framework in the field of ecology. We show how the method works for both the Swedish and the UK death count. 
+date: 2021-05-21
+image: deaths_lag_sweden_latest.png
+citation:
+  type: speech
+  issued: 2021-05-21
+  genre: Online
+  event-title: Statistical Learning Seminars
+  event-place: Online
+  url: https://www.youtube.com/embed/RHLPu389PNY
+---
+
+ <iframe width="860" height="420"
+src=" https://www.youtube.com/embed/RHLPu389PNY "> 
