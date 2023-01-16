@@ -1,0 +1,22 @@
+---
+title: Scaling of scoring rules
+author:
+  - Jonas Wallin
+  - David Bolin
+description:  A talk about scaling of scoring rules (model evaluation)
+abstract:  Averages of proper scoring rules are often used to rank probabilistic forecasts. In many cases, the individual observations and their predictive distributions in these averages have variable scale (variance). I will show that some of the most popular proper scoring rules, such as the continuous ranked probability score (CRPS), up-weight observations with large uncertainty which can lead to unintuitive rankings. We have developed a new scoring rule, scaled CRPS (SCRPS), this new proper scoring rule is locally scale invariant and therefore works in the case of varying uncertainty. I will demostrate this how this affects model selection through parameter estimation in spatial statitics.
+date: 2020-06-08
+image: pedestrian_res.jpeg
+citation:
+  type: speech
+  issued: 2020-06-08
+  genre: Online
+  event-title: CIRM, Mathematical Methods of Modern Statistics 2
+  event-place: Online
+  url: https://www.cirm-math.com/cirm-virtual-event-2146.html
+---
+
+```{=html}
+<iframe width="860" height="420"
+src=" https://www.youtube.com/embed/2Cc4bTor4 ">
+```

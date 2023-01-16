@@ -1,0 +1,24 @@
+---
+title: RSS Discussion Meeting, Linear mixed effects models for non-Gaussian continuous repeated measurement data
+author:
+  - Jonas Wallin
+  - Özgür Asar
+  - David Bolin
+  - Peter J Diggle
+description:  We present our paper (with dicussion) for the Royal statistical society 
+abstract:  We consider the analysis of continuous repeated measurement outcomes that are collected longitudinally. A standard framework for analysing data of this kind is a linear Gaussian mixed effects model within which the outcome variable can be decomposed into fixed effects, time invariant and time-varying random effects, and measurement noise. We develop methodology that, for the first time, allows any combination of these stochastic components to be non-Gaussian, using multivariate normal variance–mean mixtures. To meet the computational challenges that are presented by large data sets, i.e. in the current context, data sets with many subjects and/or many repeated measurements per subject, we propose a novel implementation of maximum likelihood estimation using a computationally efficient subsampling-based stochastic gradient algorithm. We obtain standard error estimates by inverting the observed Fisher information matrix and obtain the predictive distributions for the random effects in both filtering (conditioning on past and current data) and smoothing (conditioning on all data) contexts. To implement these procedures, we introduce an R package ngme. We reanalyse two data sets, from cystic fibrosis and nephrology research, that were previously analysed by using Gaussian linear mixed effects models.
+date: 2020-06-22
+image: egfr_scatterplot.jpeg
+citation:
+  type: speech
+  issued: 2020-06-22
+  genre: Online
+  event-title: RSS Dicussion Meeting
+  event-place: Online
+  url: https://www.youtube.com/embed/olSFzM-JUtU
+---
+
+```{=html}
+<iframe width="860" height="420"
+src=" https://www.youtube.com/embed/olSFzM-JUtU ">
+```
