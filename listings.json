@@ -3,7 +3,9 @@
     "listing": "/talks/index.html",
     "items": [
       "/talks/BottenAda/index.html",
-      "/talks/Nowcasting_Covid/index.html"
+      "/talks/Nowcasting_Covid/index.html",
+      "/talks/Non Gaussian Mixed Model/index.html",
+      "/talks/Scoring rules/index.html"
     ]
   }
 ]
