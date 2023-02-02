@@ -6,7 +6,7 @@ page-layout: full
 title-block-banner: false
 ---
 
-### Selected preprints
+### Selected preprints/Accepted
 
 ```{r}
 #| echo: false
