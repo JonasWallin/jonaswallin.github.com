@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://JonasWallin.github.io/jonaswallin.github.com/publications/index.html</loc>
-    <lastmod>2023-02-16T12:18:10.976Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonasWallin.github.io/jonaswallin.github.com/talks/BottenAda/index.html</loc>
-    <lastmod>2023-02-16T12:18:11.546Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonasWallin.github.io/jonaswallin.github.com/talks/Nowcasting_Covid/index.html</loc>
-    <lastmod>2023-02-16T12:18:12.028Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonasWallin.github.io/jonaswallin.github.com/talks/index.html</loc>
-    <lastmod>2023-02-16T12:18:12.411Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonasWallin.github.io/jonaswallin.github.com/talks/Non Gaussian Mixed Model/index.html</loc>
-    <lastmod>2023-02-16T12:18:12.841Z</lastmod>
+    <loc>https://JonasWallin.github.io/jonaswallin.github.com/about.html</loc>
+    <lastmod>2024-02-14T15:51:29.716Z</lastmod>
   </url>
   <url>
     <loc>https://JonasWallin.github.io/jonaswallin.github.com/talks/Scoring rules/index.html</loc>
-    <lastmod>2023-02-16T12:18:13.243Z</lastmod>
+    <lastmod>2024-02-14T15:51:29.721Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonasWallin.github.io/jonaswallin.github.com/talks/index.html</loc>
+    <lastmod>2024-02-14T15:51:29.722Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonasWallin.github.io/jonaswallin.github.com/talks/BottenAda/index.html</loc>
+    <lastmod>2024-02-14T15:51:29.719Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonasWallin.github.io/jonaswallin.github.com/publications/index.html</loc>
+    <lastmod>2024-02-14T15:51:29.719Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonasWallin.github.io/jonaswallin.github.com/talks/Nowcasting_Covid/index.html</loc>
+    <lastmod>2024-02-14T15:51:29.721Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonasWallin.github.io/jonaswallin.github.com/talks/Non Gaussian Mixed Model/index.html</loc>
+    <lastmod>2024-02-14T15:51:29.721Z</lastmod>
   </url>
   <url>
     <loc>https://JonasWallin.github.io/jonaswallin.github.com/index.html</loc>
-    <lastmod>2023-02-16T12:18:13.531Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonasWallin.github.io/jonaswallin.github.com/about.html</loc>
-    <lastmod>2023-02-16T12:18:13.954Z</lastmod>
+    <lastmod>2024-02-14T15:51:29.718Z</lastmod>
   </url>
 </urlset>

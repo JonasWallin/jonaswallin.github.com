@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.189">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -45,7 +45,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -54,8 +60,10 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -82,27 +90,31 @@ ga('send', {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Jonas Wallin</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../publications/index.html" aria-current="page">Publications</a>
+    <a class="nav-link active" href="../publications/index.html" aria-current="page"> 
+<span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../talks/index.html">Online talks</a>
+    <a class="nav-link" href="../talks/index.html"> 
+<span class="menu-text">Online talks</span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -132,127 +144,148 @@ ga('send', {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     
+  
     
   </div>
   
 
+
 </header>
+
 
 <section id="selected-preprintsaccepted" class="level3">
 <h3 class="anchored" data-anchor-id="selected-preprintsaccepted">Selected preprints/Accepted</h3>
 <p>
-[1]<cite> H. Hedlund, H. Du Rietz, J. Johansson, W. Zedan, L. Huang, J. Wallin, and A. Wittrup. “Absolute quantification and single-cell dose-response of cytosolic siRNA delivery”. In: <em>(accepted) Nature Communications</em> (2023).</cite>
+[1]<cite> I. Hejn'y, J. Wallin, and M. Bogdan. “Weak pattern recovery for SLOPE and its robust versions”. In: <em>arXiv preprint arXiv:2303.10970</em> (2023).</cite>
 </p>
 <p>
-[2]<cite> A. Altmejd, J. Rocklöv, and J. Wallin. “Nowcasting COVID-19 statistics reported with delay: a case-study of Sweden and the UK”. In: <em>(accepted) International Journal of Environmental Research and Public Health</em> (2023).</cite>
+[2]<cite> D. Bolin, A. Simas, and J. Wallin. “Statistical inference for Gaussian Whittle-Matern fields on metric graphs”. In: <em>arXiv preprint arXiv:2304.10372</em> (2023).</cite>
 </p>
 <p>
-[3]<cite> J. Larsson, Q. Klopfenstein, M. Massias, and J. Wallin. <em>Coordinate Descent for SLOPE. (accepted in AISTATS 2023)</em>. Tech. rep. arXiv preprint arXiv:2210.14780, 2022.</cite>
+[3]<cite> D. Bolin, A. B. Simas, and J. Wallin. “Markov properties of Gaussian random fields on compact metric graphs”. In: <em>arXiv preprint arXiv:2304.03190</em> (2023).</cite>
 </p>
 <p>
-[4]<cite> D. Bolin, A. B. Simas, and J. Wallin. <em>Gaussian Whittle-Matérn fields on metric graphs</em>. Tech. rep. arXiv preprint arXiv:2205.06163, 2022.</cite>
-</p>
-<p>
-[5]<cite> Y. Baurne, F. Delmar, and J. Wallin. <em>Modelling Consensus Emergence With Nonlinear Dynamics</em>. Tech. rep. PsyArXiv, 2022.</cite>
+[4]<cite> Y. Baurne, F. Delmar, and J. Wallin. <em>Modelling Consensus Emergence With Nonlinear Dynamics</em>. Tech. rep. PsyArXiv, 2022.</cite>
 </p>
 </section>
 <section id="articles" class="level3">
 <h3 class="anchored" data-anchor-id="articles">Articles</h3>
 <p>
-[1]<cite> Z. Farooq, J. Rocklöv, J. Wallin, N. Abiri, M. O. Sewe, H. Sjödin, and J. C. Semenza. “Artificial intelligence to predict West Nile virus outbreaks with eco-climatic drivers”. In: <em>The Lancet Regional Health-Europe</em> (2022).</cite>
+[1]<cite> D. Bolin, A. B. Simas, and J. Wallin. “Gaussian Whittle–Matérn fields on metric graphs”. In: <em>Bernoulli</em> (2024).</cite>
 </p>
 <p>
-[2]<cite> F. Delmar, J. Wallin, and A. M. Nofal. “Modeling new-firm growth and survival with panel data using event magnitude regression”. In: <em>Journal of Business Venturing</em> (2022).</cite>
+[2]<cite> A. L. Ramadona, Y. Tozan, J. Wallin, L. Lazuardi, A. Utarini, and J. Rocklöv. “Predicting the dengue cluster outbreak dynamics in Yogyakarta, Indonesia: a modelling study”. In: <em>The Lancet Regional Health-Southeast Asia</em> (2023).</cite>
 </p>
 <p>
-[3]<cite> A. Bukartas, J. Wallin, R. Finck, and C. Rääf. “Accuracy of a Bayesian technique to estimate position and activity of orphan gamma-ray sources by mobile gamma spectrometry: Influence of imprecisions in positioning systems and computational approximations”. In: <em>Plos one</em> (2022).</cite>
+[3]<cite> H. Hedlund, H. Du Rietz, J. M. Johansson, H. C. Eriksson, W. Zedan, L. Huang, J. Wallin, and A. Wittrup. “Single-cell quantification and dose-response of cytosolic siRNA delivery”. In: <em>Nature Communications</em> (2023).</cite>
 </p>
 <p>
-[4]<cite> D. Bolin and J. Wallin. “Local scale invariance and robustness of proper scoring rules”. In: <em>Statistical Science</em> (2022).</cite>
+[4]<cite> Z. Farooq, H. Sjödin, J. C. Semenza, Y. Tozan, M. O. Sewe, J. Wallin, and J. Rocklöv. “European projections of West Nile virus transmission under climate change scenarios”. In: <em>One Health</em> (2023).</cite>
 </p>
 <p>
-[5]<cite> J. Wallin, M. Bogdan, P. A. Szulc, R. Doerge, and D. O. Siegmund. “Ghost QTL and hotspots in experimental crosses: novel approach for modeling polygenic effects”. In: <em>Genetics</em> (2021).</cite>
+[5]<cite> A. Altmejd, J. Rocklöv, and J. Wallin. “Nowcasting COVID-19 Statistics Reported with Delay: A Case-Study of Sweden and the UK”. In: <em>International Journal of Environmental Research and Public Health</em> (2023).</cite>
 </p>
 <p>
-[6]<cite> L. M. McFetridge, Ö. Asar, and J. Wallin. “Robust joint modelling of longitudinal and survival data: Incorporating a time-varying degrees-of-freedom parameter”. In: <em>Biometrical Journal</em> (2021).</cite>
+[6]<cite> Z. Farooq, J. Rocklöv, J. Wallin, N. Abiri, M. O. Sewe, H. Sjödin, and J. C. Semenza. “Artificial intelligence to predict West Nile virus outbreaks with eco-climatic drivers”. In: <em>The Lancet Regional Health-Europe</em> (2022).</cite>
 </p>
 <p>
-[7]<cite> A. Bukartas, J. Wallin, R. Finck, and C. Rääf. “Bayesian algorithm to estimate position and activity of an orphan gamma source utilizing multiple detectors in a mobile gamma spectrometry system”. In: <em>PloS one</em> (2021).</cite>
+[7]<cite> F. Delmar, J. Wallin, and A. M. Nofal. “Modeling new-firm growth and survival with panel data using event magnitude regression”. In: <em>Journal of Business Venturing</em> (2022).</cite>
 </p>
 <p>
-[8]<cite> M. T. Parente, J. Wallin, and B. Wohlmuth. “Generalized bounds for active subspaces”. In: <em>Electronic Journal of Statistics</em> (2020).</cite>
+[8]<cite> A. Bukartas, J. Wallin, R. Finck, and C. Rääf. “Accuracy of a Bayesian technique to estimate position and activity of orphan gamma-ray sources by mobile gamma spectrometry: Influence of imprecisions in positioning systems and computational approximations”. In: <em>Plos one</em> (2022).</cite>
 </p>
 <p>
-[9]<cite> D. Bolin and J. Wallin. “Multivariate type G Matérn stochastic partial differential equation random fields”. In: <em>Journal of the Royal Statistical Society. Series B: Statistical Methodology</em> (2020).</cite>
+[9]<cite> D. Bolin and J. Wallin. “Local scale invariance and robustness of proper scoring rules”. In: <em>Statistical Science</em> (2022).</cite>
 </p>
 <p>
-[10]<cite> Ö. Asar, D. Bolin, P. J. Diggle, and J. Wallin. “Linear mixed effects models for non-Gaussian continuous repeated measurement data”. In: <em>Journal of the Royal Statistical Society: Series C (Applied Statistics)</em> (2020).</cite>
+[10]<cite> J. Wallin, M. Bogdan, P. A. Szulc, R. Doerge, and D. O. Siegmund. “Ghost QTL and hotspots in experimental crosses: novel approach for modeling polygenic effects”. In: <em>Genetics</em> (2021).</cite>
 </p>
 <p>
-[11]<cite> A. Bukartas, R. Finck, J. Wallin, and C. Rääf. “A Bayesian method to localize lost gamma sources”. In: <em>Applied Radiation and Isotopes</em> (2019).</cite>
+[11]<cite> L. M. McFetridge, Ö. Asar, and J. Wallin. “Robust joint modelling of longitudinal and survival data: Incorporating a time-varying degrees-of-freedom parameter”. In: <em>Biometrical Journal</em> (2021).</cite>
 </p>
 <p>
-[12]<cite> D. Bolin, J. Wallin, and F. Lindgren. “Latent Gaussian random field mixture models”. In: <em>Computational Statistics &amp; Data Analysis</em> (2019).</cite>
+[12]<cite> A. Bukartas, J. Wallin, R. Finck, and C. Rääf. “Bayesian algorithm to estimate position and activity of an orphan gamma source utilizing multiple detectors in a mobile gamma spectrometry system”. In: <em>PloS one</em> (2021).</cite>
 </p>
 <p>
-[13]<cite> J. Wallin and D. Bolin. “Efficient adaptive MCMC through precision estimation”. In: <em>Journal of Computational and Graphical Statistics</em> (2018).</cite>
+[13]<cite> M. T. Parente, J. Wallin, and B. Wohlmuth. “Generalized bounds for active subspaces”. In: <em>Electronic Journal of Statistics</em> (2020).</cite>
 </p>
 <p>
-[14]<cite> A. Hildeman, D. Bolin, J. Wallin, and J. B. Illian. “Level set Cox processes”. In: <em>Spatial statistics</em> (2018).</cite>
+[14]<cite> D. Bolin and J. Wallin. “Multivariate type G Matérn stochastic partial differential equation random fields”. In: <em>Journal of the Royal Statistical Society. Series B: Statistical Methodology</em> (2020).</cite>
 </p>
 <p>
-[15]<cite> B. Gunnarsson, J. Wallin, and J. Klingberg. “Predation by avian insectivores on caterpillars is linked to leaf damage on oak (Quercus robur)”. In: <em>Oecologia</em> (2018).</cite>
+[15]<cite> Ö. Asar, D. Bolin, P. J. Diggle, and J. Wallin. “Linear mixed effects models for non-Gaussian continuous repeated measurement data”. In: <em>Journal of the Royal Statistical Society: Series C (Applied Statistics)</em> (2020).</cite>
 </p>
 <p>
-[16]<cite> K. Podgórski and J. Wallin. “Convolution-invariant subclasses of generalized hyperbolic distributions”. In: <em>Communications in Statistics-Theory and Methods</em> (2016).</cite>
+[16]<cite> A. Bukartas, R. Finck, J. Wallin, and C. Rääf. “A Bayesian method to localize lost gamma sources”. In: <em>Applied Radiation and Isotopes</em> (2019).</cite>
 </p>
 <p>
-[17]<cite> W. Mao, I. Rychlik, J. Wallin, and G. Storhaug. “Statistical models for the speed prediction of a container ship”. In: <em>Ocean engineering</em> (2016).</cite>
+[17]<cite> D. Bolin, J. Wallin, and F. Lindgren. “Latent Gaussian random field mixture models”. In: <em>Computational Statistics &amp; Data Analysis</em> (2019).</cite>
 </p>
 <p>
-[18]<cite> R. Maghsood, P. Johannesson, and J. Wallin. “Detection of steering events using hidden Markov models with multivariate observations”. In: <em>International Journal of Vehicle Systems Modelling and Testing</em> (2016).</cite>
+[18]<cite> J. Wallin and D. Bolin. “Efficient adaptive MCMC through precision estimation”. In: <em>Journal of Computational and Graphical Statistics</em> (2018).</cite>
 </p>
 <p>
-[19]<cite> K. Johnsson, J. Wallin, and M. Fontes. “BayesFlow: latent modeling of flow cytometry cell populations”. In: <em>BMC bioinformatics</em> (2016).</cite>
+[19]<cite> A. Hildeman, D. Bolin, J. Wallin, and J. B. Illian. “Level set Cox processes”. In: <em>Spatial statistics</em> (2018).</cite>
 </p>
 <p>
-[20]<cite> D. Bolin and J. Wallin. “Spatially adaptive covariance tapering”. In: <em>Spatial Statistics</em> (2016).</cite>
+[20]<cite> B. Gunnarsson, J. Wallin, and J. Klingberg. “Predation by avian insectivores on caterpillars is linked to leaf damage on oak (Quercus robur)”. In: <em>Oecologia</em> (2018).</cite>
 </p>
 <p>
-[21]<cite> D. Bolin, A. Frigessi, P. Guttorp, O. Haug, E. Orskaug, I. Scheel, and J. Wallin. “Calibrating regionally downscaled precipitation over Norway through quantile-based approaches”. In: <em>Advances in Statistical Climatology, Meteorology and Oceanography</em> (2016).</cite>
+[21]<cite> K. Podgórski and J. Wallin. “Convolution-invariant subclasses of generalized hyperbolic distributions”. In: <em>Communications in Statistics-Theory and Methods</em> (2016).</cite>
 </p>
 <p>
-[22]<cite> J. Wallin and D. Bolin. “Geostatistical modelling using non-Gaussian Matérn fields”. In: <em>Scandinavian Journal of Statistics</em> (2015).</cite>
+[22]<cite> W. Mao, I. Rychlik, J. Wallin, and G. Storhaug. “Statistical models for the speed prediction of a container ship”. In: <em>Ocean engineering</em> (2016).</cite>
 </p>
 <p>
-[23]<cite> K. Podgórski and J. Wallin. “Maximizing leave-one-out likelihood for the location parameter of unbounded densities”. In: <em>Annals of the Institute of Statistical Mathematics</em> (2015).</cite>
+[23]<cite> R. Maghsood, P. Johannesson, and J. Wallin. “Detection of steering events using hidden Markov models with multivariate observations”. In: <em>International Journal of Vehicle Systems Modelling and Testing</em> (2016).</cite>
 </p>
 <p>
-[24]<cite> K. Podgórski, I. Rychlik, and J. Wallin. “Slepian models for moving averages driven by a non-Gaussian noise”. In: <em>Extremes</em> (2015).</cite>
+[24]<cite> K. Johnsson, J. Wallin, and M. Fontes. “BayesFlow: latent modeling of flow cytometry cell populations”. In: <em>BMC bioinformatics</em> (2016).</cite>
 </p>
 <p>
-[25]<cite> R. Maghsood, I. Rychlik, and J. Wallin. “Modeling extreme loads acting on steering components using driving events”. In: <em>Probabilistic Engineering Mechanics</em> (2015).</cite>
+[25]<cite> D. Bolin and J. Wallin. “Spatially adaptive covariance tapering”. In: <em>Spatial Statistics</em> (2016).</cite>
 </p>
 <p>
-[26]<cite> S. I. Adalbjörnsson, J. Swärd, J. Wallin, and A. Jakobsson. “Estimating periodicities in symbolic sequences using sparse modeling”. In: <em>IEEE Transactions on Signal Processing</em> (2015).</cite>
+[26]<cite> D. Bolin, A. Frigessi, P. Guttorp, O. Haug, E. Orskaug, I. Scheel, and J. Wallin. “Calibrating regionally downscaled precipitation over Norway through quantile-based approaches”. In: <em>Advances in Statistical Climatology, Meteorology and Oceanography</em> (2016).</cite>
+</p>
+<p>
+[27]<cite> J. Wallin and D. Bolin. “Geostatistical modelling using non-Gaussian Matérn fields”. In: <em>Scandinavian Journal of Statistics</em> (2015).</cite>
+</p>
+<p>
+[28]<cite> K. Podgórski and J. Wallin. “Maximizing leave-one-out likelihood for the location parameter of unbounded densities”. In: <em>Annals of the Institute of Statistical Mathematics</em> (2015).</cite>
+</p>
+<p>
+[29]<cite> K. Podgórski, I. Rychlik, and J. Wallin. “Slepian models for moving averages driven by a non-Gaussian noise”. In: <em>Extremes</em> (2015).</cite>
+</p>
+<p>
+[30]<cite> R. Maghsood, I. Rychlik, and J. Wallin. “Modeling extreme loads acting on steering components using driving events”. In: <em>Probabilistic Engineering Mechanics</em> (2015).</cite>
+</p>
+<p>
+[31]<cite> S. I. Adalbjörnsson, J. Swärd, J. Wallin, and A. Jakobsson. “Estimating periodicities in symbolic sequences using sparse modeling”. In: <em>IEEE Transactions on Signal Processing</em> (2015).</cite>
 </p>
 </section>
 <section id="proccedings" class="level3">
 <h3 class="anchored" data-anchor-id="proccedings">Proccedings</h3>
 <p>
-[1]<cite> J. Larsson and J. Wallin. “The Hessian Screening Rule”. In: <em>Advances in Neural Information Processing Systems</em>. 2022.</cite>
+[1]<cite> J. Larsson, Q. Klopfenstein, M. Massias, and J. Wallin. “Coordinate descent for slope”. In: <em>International Conference on Artificial Intelligence and Statistics</em>. PMLR. 2023.</cite>
 </p>
 <p>
-[2]<cite> D. Bolin and J. Wallin. “Efficient methods for Gaussian Markov random fields under sparse linear constraints”. In: <em>Advances in Neural Information Processing Systems</em>. 2021.</cite>
+[2]<cite> Y. Baurne, F. Delmar, J. Wallin, and A. Brattstrom. “How Significant Events and Team Trust Predict Member’s Exit in New Venture Teams”. In: <em>Academy of Management Proceedings</em>. Academy of Management Briarcliff Manor, NY 10510. 2023.</cite>
 </p>
 <p>
-[3]<cite> J. Larsson, M. Bogdan, and J. Wallin. “The Strong Screening Rule for SLOPE”. In: <em>Advances in Neural Information Processing Systems</em>. Ed. by H. Larochelle, M. Ranzato, R. Hadsell, M. Balcan and H. Lin. Curran Associates, Inc., 2020.</cite>
+[3]<cite> J. Larsson and J. Wallin. “The Hessian Screening Rule”. In: <em>Advances in Neural Information Processing Systems</em>. 2022.</cite>
 </p>
 <p>
-[4]<cite> F. Delmar and J. Wallin. “Modelling new firm growth and survival: Some practical solutions”. In: <em>Academy of Management Proceedings</em>. Academy of Management Briarcliff Manor, NY 10510. 2018.</cite>
+[4]<cite> D. Bolin and J. Wallin. “Efficient methods for Gaussian Markov random fields under sparse linear constraints”. In: <em>Advances in Neural Information Processing Systems</em>. 2021.</cite>
+</p>
+<p>
+[5]<cite> J. Larsson, M. Bogdan, and J. Wallin. “The Strong Screening Rule for SLOPE”. In: <em>Advances in Neural Information Processing Systems</em>. Ed. by H. Larochelle, M. Ranzato, R. Hadsell, M. Balcan and H. Lin. Curran Associates, Inc., 2020.</cite>
+</p>
+<p>
+[6]<cite> F. Delmar and J. Wallin. “Modelling new firm growth and survival: Some practical solutions”. In: <em>Academy of Management Proceedings</em>. Academy of Management Briarcliff Manor, NY 10510. 2018.</cite>
 </p>
 
 
@@ -286,9 +319,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -300,17 +347,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -320,8 +383,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -336,24 +408,274 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
@@ -367,6 +689,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </li>  
 </ul>
     </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
@@ -379,6 +704,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+
 
 
 
