@@ -4,7 +4,7 @@
     "href": "software.html",
     "title": "Software",
     "section": "",
-    "text": "MetricGraph\nRandom fields on metric graphs: Gaussian Whittle–Matérn fields, graph construction and inference for data on networks such as roads or rivers. CRAN · Documentation\n\n\nngme2\nLinear latent non-Gaussian models with flexible distributions, for spatial, temporal and longitudinal data. CRAN · Documentation\n\n\nSLOPE\nSorted L1 penalized estimation (SLOPE) for sparse regression. CRAN · Documentation · GitHub\n\n\nOther code\nFurther research code is on GitHub."
+    "text": "MetricGraph\nRandom fields on metric graphs: Gaussian Whittle–Matérn fields, graph construction and inference for data on networks such as roads or rivers. CRAN · Documentation\n\n\nngme2\nLinear latent non-Gaussian models with flexible distributions, for spatial, temporal and longitudinal data. CRAN · Documentation\n\n\nSLOPE\nSorted L1 penalized estimation (SLOPE) for sparse regression. CRAN · Documentation · GitHub\n\n\nBotten Ada\nBayesian poll-of-polls and forecasting model for Swedish elections, developed with Måns Magnusson. It pools opinion polls with over 20 years of polling and election data, adjusts for pollster bias and simulates election outcomes; forecasts are published at bottenada.se. Website · Model code · Poll data · Talk\n\n\nOther code\nFurther research code is on GitHub."
   },
   {
     "objectID": "talks/Scoring rules/index.html",
