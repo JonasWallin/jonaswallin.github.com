@@ -10,12 +10,28 @@ about:
       href: https://github.com/JonasWallin
     - text: <i class="ai ai-google-scholar"></i> Google scholar
       href: https://scholar.google.com/citations?user=ls18L60AAAAJ
+    - text: <i class="ai ai-orcid"></i> ORCID
+      href: https://orcid.org/0000-0003-0381-6593
+    - icon: building
+      text: Lund University
+      href: https://portal.research.lu.se/en/persons/7c5b93b1-764c-4716-b2d6-02b0a99a5cc5
     - icon: envelope
       text: mail
       href: mailto:jonas.wallin81@gmail.com
-    - icon: resume
+    - icon: file-earmark-person
       text: cv.pdf
       href: https://github.com/JonasWallin/cv/raw/main/CV.pdf  
 ---
 
-Associate Professor in Statistics at the [Department of Statistics](https://stat.lu.se) at [Lund University](https://lu.se), Sweden.
+Associate Professor in Statistics at the [Department of Statistics](https://stat.lu.se) at [Lund University](https://lu.se), Sweden, where I am also director of doctoral studies.
+
+My research is in computational and spatial statistics: Gaussian random fields and SPDE-based models, including Gaussian processes on metric graphs and non-Gaussian latent models; Bayesian computation; and sparse high-dimensional regression. Much of this work is developed together with open-source [software](software.qmd). I also work on applications, in particular climate-sensitive infectious diseases.
+
+**Research interests**
+
+- Gaussian random fields, SPDEs and Gaussian processes on metric graphs
+- Non-Gaussian latent variable models
+- Bayesian computation and MCMC
+- Sparse and high-dimensional regression (SLOPE)
+- Spatial confounding and forecast evaluation
+- Statistical modelling of climate-sensitive infectious diseases

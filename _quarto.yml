@@ -11,10 +11,12 @@ website:
         
       - text: Online talks
         href: talks/index.qmd
-  google-analytics: "UA-50922471-1"
+
+      - text: Software
+        href: software.qmd
   page-footer:
     left:
-        - text:  "Copyright 2023, Jonas Wallin"
+        - text:  "© 2026 Jonas Wallin"
     right:
         - icon: github
           href: "https://github.com/JonasWallin"

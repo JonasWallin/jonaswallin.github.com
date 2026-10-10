@@ -12,3 +12,5 @@
 ### quarto
 /.quarto/
 /_site/
+### Claude Code (local only, not published)
+.claude/

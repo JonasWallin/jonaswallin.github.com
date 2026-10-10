@@ -1,6 +1,6 @@
 ---
 title: Publications
-subtitle: My publication list and some selected preprint
+subtitle: My publication list and selected preprints
 sidebar: false
 page-layout: full
 title-block-banner: false
@@ -27,7 +27,7 @@ mybib <- RefManageR::ReadBib("../bib/bibliography.bib", check = FALSE)
 print(sort(mybib[bibtype= "article"],sorting="ynt",decreasing=T))
 ```
 
-### Proccedings
+### Proceedings
 
 ```{r, echo=FALSE}
 #| echo: false

@@ -1,0 +1,21 @@
+---
+title: Software
+subtitle: Open-source packages I develop or co-develop
+page-layout: article
+toc: false
+---
+
+### MetricGraph
+Random fields on metric graphs: Gaussian Whittle–Matérn fields, graph construction and inference for data on networks such as roads or rivers.
+[CRAN](https://cran.r-project.org/package=MetricGraph) · [Documentation](https://davidbolin.github.io/MetricGraph/)
+
+### ngme2
+Linear latent non-Gaussian models with flexible distributions, for spatial, temporal and longitudinal data.
+[CRAN](https://cran.r-project.org/package=ngme2) · [Documentation](https://davidbolin.github.io/ngme2/)
+
+### SLOPE
+Sorted L1 penalized estimation (SLOPE) for sparse regression.
+[CRAN](https://cran.r-project.org/package=SLOPE) · [Documentation](https://jolars.github.io/SLOPE/) · [GitHub](https://github.com/jolars/SLOPE)
+
+### Other code
+Older research code, e.g. [BayesFlow](https://github.com/JonasWallin/BayesFlow) (Bayesian latent modelling of flow cytometry cell populations), is on [GitHub](https://github.com/JonasWallin?tab=repositories).
