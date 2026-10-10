@@ -1,1 +1,8 @@
 /* css styles */
+
+/* Landing page (jolla template centres everything): keep bullet lists left-aligned as a centred block */
+.quarto-about-jolla main ul,
+.quarto-about-jolla ul:not(.about-links) {
+  display: inline-block;
+  text-align: left;
+}
