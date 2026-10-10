@@ -18,4 +18,4 @@ Sorted L1 penalized estimation (SLOPE) for sparse regression.
 [CRAN](https://cran.r-project.org/package=SLOPE) · [Documentation](https://jolars.github.io/SLOPE/) · [GitHub](https://github.com/jolars/SLOPE)
 
 ### Other code
-Older research code, e.g. [BayesFlow](https://github.com/JonasWallin/BayesFlow) (Bayesian latent modelling of flow cytometry cell populations), is on [GitHub](https://github.com/JonasWallin?tab=repositories).
+Further research code is on [GitHub](https://github.com/JonasWallin?tab=repositories).

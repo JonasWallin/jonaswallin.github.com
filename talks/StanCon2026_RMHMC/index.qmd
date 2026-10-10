@@ -1,0 +1,20 @@
+---
+title: Hierarchical Riemannian manifold Hamiltonian Monte Carlo algorithms
+author:
+  - Jonas Wallin
+description: A talk at StanCon 2026 on Riemannian manifold HMC with a hierarchical metric.
+date: 2026-08-19
+image: stancon2026.png
+citation:
+  type: speech
+  issued: 2026-08-19
+  event-title: StanCon 2026
+  event-place: Uppsala, Sweden
+  url: https://www.youtube.com/watch?v=PNMHVhZqyJk
+---
+
+Related preprint: M. Kailas, M. Vihola and J. Wallin, [Adaptive Riemannian manifold Hamiltonian Monte Carlo with hierarchical metric](https://arxiv.org/abs/2604.09832) (2026).
+
+```{=html}
+<iframe width="860" height="420" src="https://www.youtube.com/embed/PNMHVhZqyJk" title="Hierarchical Riemannian manifold Hamiltonian Monte Carlo algorithms" allowfullscreen></iframe>
+```
