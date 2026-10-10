@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://JonasWallin.github.io/jonaswallin.github.com/software.html</loc>
-    <lastmod>2026-10-10T19:58:12.544Z</lastmod>
+    <lastmod>2026-10-10T20:22:40.590Z</lastmod>
   </url>
   <url>
     <loc>https://JonasWallin.github.io/jonaswallin.github.com/talks/Scoring rules/index.html</loc>
@@ -13,12 +13,16 @@
     <lastmod>2026-10-10T19:58:21.511Z</lastmod>
   </url>
   <url>
-    <loc>https://JonasWallin.github.io/jonaswallin.github.com/talks/BottenAda/index.html</loc>
-    <lastmod>2024-02-14T15:51:29.719Z</lastmod>
+    <loc>https://JonasWallin.github.io/jonaswallin.github.com/talks/StanCon2026_RMHMC/index.html</loc>
+    <lastmod>2026-10-10T20:24:59.078Z</lastmod>
   </url>
   <url>
     <loc>https://JonasWallin.github.io/jonaswallin.github.com/publications/index.html</loc>
     <lastmod>2026-10-10T19:58:26.878Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonasWallin.github.io/jonaswallin.github.com/talks/BottenAda/index.html</loc>
+    <lastmod>2024-02-14T15:51:29.719Z</lastmod>
   </url>
   <url>
     <loc>https://JonasWallin.github.io/jonaswallin.github.com/talks/Nowcasting_Covid/index.html</loc>
