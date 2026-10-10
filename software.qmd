@@ -17,5 +17,9 @@ Linear latent non-Gaussian models with flexible distributions, for spatial, temp
 Sorted L1 penalized estimation (SLOPE) for sparse regression.
 [CRAN](https://cran.r-project.org/package=SLOPE) · [Documentation](https://jolars.github.io/SLOPE/) · [GitHub](https://github.com/jolars/SLOPE)
 
+### Botten Ada
+Bayesian poll-of-polls and forecasting model for Swedish elections, developed with Måns Magnusson. It pools opinion polls with over 20 years of polling and election data, adjusts for pollster bias and simulates election outcomes; forecasts are published at bottenada.se.
+[Website](https://www.bottenada.se) · [Model code](https://github.com/MansMeg/ada_code) · [Poll data](https://github.com/MansMeg/SwedishPolls) · [Talk](talks/BottenAda/index.qmd)
+
 ### Other code
 Further research code is on [GitHub](https://github.com/JonasWallin?tab=repositories).
