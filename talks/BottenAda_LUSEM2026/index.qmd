@@ -1,0 +1,21 @@
+---
+title: Opinionsmätningar och valet
+author:
+  - Jonas Wallin
+description: A short video (in Swedish) from Lund University School of Economics and Management on Botten Ada, the poll-of-polls model that simulates elections to estimate the probabilities of different outcomes.
+date: 2026-05-22
+image: bottenada_lusem2026.png
+citation:
+  type: speech
+  issued: 2026-05-22
+  genre: Online
+  event-title: Lund University School of Economics and Management
+  event-place: Online
+  url: https://www.youtube.com/watch?v=f_Sy1cVd2XE
+---
+
+Botten Ada is developed by Jonas Wallin, Måns Magnusson and Jens Finnäs. See also the [Software page](../../software.qmd) and [bottenada.se](https://www.bottenada.se).
+
+```{=html}
+<iframe width="860" height="420" src="https://www.youtube.com/embed/f_Sy1cVd2XE" title="Opinionsmätningar och valet" allowfullscreen></iframe>
+```
